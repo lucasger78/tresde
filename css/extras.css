@@ -180,8 +180,9 @@
 
 .service-img-card:hover .text-intro {
   height: 220px;
-  bottom: 240px;
+  bottom: 270px;
   background: #000;
+  opacity: .8;
 }
 
 .h3-service {
