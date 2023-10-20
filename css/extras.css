@@ -175,12 +175,12 @@
   background: rgb(27, 27, 27, .4);
   color:#dfdfdf;  
   text-align: center;
-  transition: .3s;
+  transition: .5s;
 }
 
 .service-img-card:hover .text-intro {
-  height: 220px;
-  bottom: 270px;
+  height: auto;
+  bottom: 22,5%;
   background: #000;
   opacity: .8;
 }
@@ -198,7 +198,7 @@
   font-family: 'Montserrat', sans-serif;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .service-img-card:hover .p-service {
@@ -210,6 +210,11 @@
   transform: scale(1.1) rotate(-3deg);
 }
 
+/* ANEXO */
+/* .service-img-card:hover .h3-service,
+.service-img-card:hover .p-service {
+  opacity: 1;
+} */
 
 /* WHATSAPP */
 
