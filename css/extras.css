@@ -197,25 +197,25 @@
     bottom: 22.5%;
   }
 
-  /* h1{
+  h1 .h1{
     font-family: 'Montserrat Black', sans-serif;
   } 
   
-  h2, h3, h4{
+  h2 .h2, h3 .h3, h4 .h4{
     font-family: 'Montserrat ExtraBold', sans-serif;
   }
 
-  h5, h6{
+  h5 .h5, h6 .h6{
     font-family: 'Montserrat Bold', sans-serif;
   }
 
-  p, a{
+  p .p, a .a{
     font-family: 'Montserrat', sans-serif;
   }
 
   .footer-text{
     font-family: 'Montserrat', sans-serif;
-  } */
+  }
 }
 
 .service-img-card:hover .img-card {
