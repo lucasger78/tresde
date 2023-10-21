@@ -194,9 +194,21 @@
     bottom: 22.5%;
   }
 
+  h1{
+    font-family: 'Montserrat Black', sans-serif;
+  } 
+  
+  h2, h3, h4{
+    font-family: 'Montserrat ExtraBold', sans-serif;
+  }
 
+  h5, h6{
+    font-family: 'Montserrat Bold', sans-serif;
+  }
 
-
+  p{
+    font-family: 'Montserrat', sans-serif;
+  }
 }
 
 .service-img-card:hover .img-card {
