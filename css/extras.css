@@ -43,12 +43,37 @@
 
 /* GALERÍA SERVICIOS */
 
+/* .p-icon-service {
+  text-align: center;
+  
+}
+
+.h3-icon-service {
+  text-align: center;
+}
+
+.icon-service{
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+} */
+
+.service-iconos{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;   
+  padding-right: 15px;
+}
+
+
 .content-service {
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
-  align-items: center;
-  /* min-height: 100vh; */
+  align-items: center; 
   margin-top: 5%;
   height: 400px;
   width: 100%;
@@ -66,7 +91,7 @@
 .service-img-card {
   width: 100%;
   max-width: 100%;
-  box-shadow: 2px 2px 10px #000;
+  box-shadow: 1px 1px 5px #000;
   overflow: hidden;
   border-radius: 5px;
   transition: 0.3s;
@@ -99,6 +124,7 @@
   font-size: x-large;
   text-transform: uppercase;
   font-family: 'Montserrat ExtraBold', sans-serif;
+  color:#838383;
 }
 
 .p-service {
@@ -149,6 +175,7 @@
     font-size:medium;
     text-transform: uppercase;
     font-family: 'Montserrat ExtraBold', sans-serif;
+    color:#838383;
   }
   
   .p-service {
@@ -166,6 +193,10 @@
     opacity: .8;
     bottom: 22.5%;
   }
+
+
+
+
 }
 
 .service-img-card:hover .img-card {
