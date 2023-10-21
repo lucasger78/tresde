@@ -113,7 +113,7 @@ h1, .h1 {
       }
   
 @media (max-width: 1000px) {
-  h1, .h1 {
+  h1 {
     font-size: 2.5rem; 
     font-family: 'Montserrat Black', sans-serif;} 
   }
@@ -126,7 +126,7 @@ h2, .h2 {
       font-family: 'Montserrat Black', sans-serif; } }
 
 @media (max-width: 1000px) {
-  h2, .h2 {
+  h2 {
     font-size: 2.5rem; 
     font-family: 'Montserrat Black', sans-serif;} 
         }
@@ -141,29 +141,29 @@ h3, .h3 {
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
-    h4, .h4 {
+    h4 {
       font-size: 1.5rem;
       font-family: 'Montserrat ExtraBold', sans-serif; } }
 
 
   
 @media (max-width: 1000px) {
-  h3, .h3 {
+  h3 {
     font-size: 1.75rem;
     font-family: 'Montserrat ExtraBold', sans-serif; } }
       
 @media (max-width: 1000px) {
-  h4, .h4 {
+  h4 {
     font-size: 1.75rem;
     font-family: 'Montserrat Bold', sans-serif; } }
 
 @media (max-width: 1000px) {
-  h5, .h5 {
+  h5 {
     font-size: 1.75rem;
     font-family: 'Montserrat Bold', sans-serif; } }
 
 @media (max-width: 1000px) {
-  h6, .h6 {
+  h6 {
     font-size: 1.75rem;
     font-family: 'Montserrat Bold', sans-serif; } }
 
