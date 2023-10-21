@@ -43,119 +43,35 @@
 
 /* GALERÍA SERVICIOS */
 
-/* .content-service{
+.content-service {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: right;
-  height: 100vh;
-  background: whitesmoke;
   align-items: center;
-  padding-right: 15px;
-  flex-wrap: wrap;
-}
-
-.container-service{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;   
-}
-
-.service-img-card{
-  height: 100%;
-  margin: 0px;
-  box-shadow: 2px 2px 10px #000;
-  overflow: hidden;
-  background-color: #f7f7f7;
-  flex-wrap: wrap;
-}
-
-.img-card{
-  height: 100%;
-  width: 350px;  
-  border-radius: 5px;
-  object-fit: cover;
-  transition: .3s;
-}
-
-.text-intro{
-  height: 70px;
-  width: 350px;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 240px;
-  background: rgb(27, 27, 27, .4);
-  color:#dfdfdf;  
-  text-align: center;
-  transition: .3s;
-  flex-wrap: wrap;
-}
-
-.h3-service{
-  margin: 10px;
-  font-size:xx-large;
-  text-transform: uppercase;
-  font-family: 'Montserrat ExtraBold', sans-serif;
-}
-
-.p-service{
-  font-size:large ;
-  margin: 20px ;
-  font-family: 'Montserrat', sans-serif;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.service-img-card:hover{
-  cursor: pointer;
-
-}
-
-.service-img-card:hover .text-intro{
-  height: 220px;
-  bottom: 240px;
-  background: #000;
-}
-
-
-.service-img-card:hover .p-service{
-  opacity: 1;
-  visibility: visible;
-}
-
-.service-img-card:hover .img-card{
-  transform: scale(1.1) rotate(-3deg);
-}
-
-@media screen and (max-width:1000px){
-  .content-service{    
-    width: 90%;  
-  }
-} */
-
-/* PRUEBA 1 */
-/* .content-service {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:right;
-  align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  margin-top: 5%;
+  height: 400px;
   width: 100%;
   padding-right: 15px;
   background: whitesmoke;
 }
 
-.container-service{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;   
+.container-service {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0; 
+  text-align: center; 
 }
 
 .service-img-card {
-  width: 300px;  
+  width: 100%;
+  max-width: 100%;
   box-shadow: 2px 2px 10px #000;
-  overflow: hidden;  
-  transition: 0.3s;
+  overflow: hidden;
   border-radius: 5px;
+  transition: 0.3s;
+  position: relative;
+ 
 }
 
 .img-card {
@@ -166,27 +82,16 @@
 }
 
 .text-intro {
-  height: 70px;
-  width: 300px;
+  height: 10vh;
+  width: 100%;
   box-sizing: border-box;
   position: absolute;
-  bottom: 21.5%;
-  background: rgb(27, 27, 27, .4);
-  color:#dfdfdf;  
+  bottom: 0;
+  background: rgba(27, 27, 27, .4);
+  color: #dfdfdf;
   text-align: center;
   transition: .3s;
-  
-}
-
-.service-img-card:hover .text-intro {
-  height: auto;
-  bottom: 21.5%;
-  background: #000;
-  opacity: .8;
-}
-
-.service-img-card:hover{
-  cursor: pointer;
+  overflow: hidden;
 }
 
 .h3-service {
@@ -202,68 +107,10 @@
   font-family: 'Montserrat', sans-serif;
   visibility: hidden;
   opacity: 0;
-  transition: 0.1s;
-}
-
-.service-img-card:hover .p-service {
-  opacity: 1;
-  visibility: visible;
   transition: 0.3s;
 }
-
-.service-img-card:hover .img-card {
-  transform: scale(1.1) rotate(-3deg);
-} */
-
-/* PRUEBA 2 */
-.content-service {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-  padding-right: 15px;
-  background: whitesmoke;
-}
-
-.container-service {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;   
-}
-
-.service-img-card {
-  width: 20vw; /* Ancho relativo al 30% del ancho de la ventana del navegador */ 
-  box-shadow: 2px 2px 10px #000;
-  overflow: hidden;
-  border-radius: 5px;
-  transition: 0.3s;
-  /* position: relative; */
-}
-
-.img-card {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: 0.3s;
-}
-
-.text-intro {
-  height: 10vh; 
-  width: 20.3%;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 20.3%;
-  background: rgba(27, 27, 27, .4);
-  color: #dfdfdf;  
-  text-align: center;
-  transition: .3s;
-  overflow: hidden;
-}
-
 .service-img-card:hover .text-intro {
-  height: auto; 
+  height: auto;
   background: #000;
   opacity: .8;
   bottom: 22.5%;
@@ -273,36 +120,59 @@
   cursor: pointer;
 }
 
-.h3-service {
-  margin: 10px;
-  font-size: x-large;
-  text-transform: uppercase;
-  font-family: 'Montserrat ExtraBold', sans-serif;
-}
-
-.p-service {
-  font-size: large;
-  margin: 20px;
-  font-family: 'Montserrat', sans-serif;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s;
-}
-
 .service-img-card:hover .p-service {
   opacity: 1;
   visibility: visible;
   transition: 0.3s;
+} 
+
+/* GALERÍA SERVICIOS RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .container-service {
+    max-width: 70%; 
+  }
+
+  .service-img-card:hover .text-intro {
+    bottom: 0;
+  }
+
+  .content-service {
+    height: auto;
+    justify-content: center;    
+    padding-bottom: 10px;
+    
+  }
+
+  .h3-service {
+    margin: 10px;
+    font-size:medium;
+    text-transform: uppercase;
+    font-family: 'Montserrat ExtraBold', sans-serif;
+  }
+  
+  .p-service {
+    font-size: small;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .service-img-card:hover .text-intro {
+    height: auto;
+    background: #000;
+    opacity: .8;
+    bottom: 22.5%;
+  }
 }
 
 .service-img-card:hover .img-card {
   transform: scale(1.1) rotate(-3deg);
 }
 
-
-
-/* RESPONSIVE */
-
+/* FIN GALERÍA SERVICIOS*/
 
 /* WHATSAPP */
 
