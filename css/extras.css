@@ -306,3 +306,13 @@
   }
 
 /* END WHATSAPP */ 
+
+
+
+/* NO REPRODUCE VIDEO EN VERSION MOBILE */ 
+
+@media screen and (max-width: 768px) {
+  .video-container {
+      display: none;
+  }
+}
