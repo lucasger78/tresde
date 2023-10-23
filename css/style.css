@@ -108,13 +108,13 @@ h1, .h1 {
   font-size: calc(1.375rem + 1.5vw); }
   @media (min-width: 1200px) {
     h1, .h1 {
-      font-size: 2.5rem; 
+      /* font-size: 2.5rem;  */
       font-family: 'Montserrat Black', sans-serif;} 
       }
   
 @media (max-width: 1000px) {
   h1 {
-    font-size: 2.5rem; 
+    /* font-size: 2.5rem;  */
     font-family: 'Montserrat Black', sans-serif !important;} 
   }
 
@@ -122,12 +122,12 @@ h2, .h2 {
   font-size: calc(1.325rem + 0.9vw); }
   @media (min-width: 1200px) {
     h2, .h2 {
-      font-size: 2rem;
+      /* font-size: 2rem; */
       font-family: 'Montserrat Black', sans-serif; } }
 
 @media (max-width: 1000px) {
   h2 {
-    font-size: 2.5rem; 
+    /* font-size: 2.5rem;  */
     font-family: 'Montserrat Black', sans-serif !important;} 
         }
 
@@ -135,7 +135,7 @@ h3, .h3 {
   font-size: calc(1.3rem + 0.6vw); }
   @media (min-width: 1200px) {
     h3, .h3 {
-      font-size: 1.75rem;
+      /* font-size: 1.75rem; */
       font-family: 'Montserrat ExtraBold', sans-serif; 
     } }
 
@@ -143,42 +143,42 @@ h4, .h4 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
     h4 {
-      font-size: 1.5rem;
+      /* font-size: 1.5rem; */
       font-family: 'Montserrat ExtraBold', sans-serif; } }
 
 
   
 @media (max-width: 1000px) {
   h3 {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
     font-family: 'Montserrat ExtraBold', sans-serif !important; } }
       
 @media (max-width: 1000px) {
   h4 {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
     font-family: 'Montserrat Bold', sans-serif !important; } }
 
 @media (max-width: 1000px) {
   h5 {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
     font-family: 'Montserrat Bold', sans-serif !important; } }
 
 @media (max-width: 1000px) {
   h6 {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
     font-family: 'Montserrat Bold', sans-serif !important; } }
 
 @media (max-width: 1000px) {
   p {
     
-    font-family: 'Montserrat ExtraBold', sans-serif !important; } }
+    font-family: 'Montserrat', sans-serif !important; } }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-family: 'Montserrat ExtraBold', sans-serif; }
 
 h6, .h6 {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-family: 'Montserrat Bold', sans-serif; }
 
 p {
