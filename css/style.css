@@ -219,6 +219,7 @@ h6, .h6{
 }
 
 @media (max-width: 1000px) {
+  a,
   p {
     
     font-family: 'Montserrat', sans-serif !important; } }
@@ -462,9 +463,9 @@ legend {
 ::-webkit-inner-spin-button {
   height: auto; }
 
-[type="search"] {
+/* [type="search"] {
   outline-offset: -2px;
-  -webkit-appearance: textfield; }
+  -webkit-appearance: textfield; } */
 
 /* rtl:raw:
 [type="tel"],
