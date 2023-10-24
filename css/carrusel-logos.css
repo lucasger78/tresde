@@ -1,0 +1,69 @@
+/* CARRUSEL */
+
+
+/* carrusel logos */
+
+.swiper-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  animation: slide 35s linear infinite;
+  width: 100%; 
+  transform: translateX(0%);
+}
+
+.swiper-slide {
+  flex: 0 0 20%; 
+  padding: 10px;
+}
+
+.swiper-slide img {
+  width: 90%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-290%); 
+  }
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+  .swiper-slide img {
+    width: 115%;
+  }
+  .swiper-slide {
+    flex: 0 0 30%; 
+    padding: 10px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-550%); 
+    }
+  }
+}
+
+/* Estilo para las imágenes en blanco y negro */
+.swiper-slide img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+}
+
+/* Cambia la imagen a color cuando se hace hover */
+.swiper-slide img:hover {
+    filter: grayscale(0%);
+}
+
+
+/* fin carrusel logos */
