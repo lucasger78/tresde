@@ -51,6 +51,18 @@
     font-size: xx-small;    
 }
 
+.material-text{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: center;   
+  padding-right: 15px;
+}
+
+.heading-content-materials{
+  font-size: small;
+}
 
 /* GALERÍA SERVICIOS */
 
@@ -295,9 +307,16 @@
 
 /* NO REPRODUCE VIDEO EN VERSION MOBILE */ 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .video-container {
       display: none;
+  }
+}
+
+/* TEXTO HEADER EN VERSION MOBILE */
+@media (max-width: 767px) {
+  .title-hero {
+      color: #3d3d3d!important; 
   }
 }
 
@@ -339,7 +358,48 @@
 
 /* FORMULARIO */
 .form-control{
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-color: rgb(146, 145, 145);
 }
+
+/* SECTION MATERIAL */
+
+.material-section {
+  background: #F7F7F7;
+  /* opacity: 0; */
+  position: relative;
+  z-index: 1;
+  justify-content:right;
+  margin-top: -10px;
+  padding-top: 6rem;
+  /* height: 10rem; */
+ }
+  @media (max-width: 991.98px) {
+    .material-section {
+      padding-top: 2rem; } }
+  .material-section .heading-content {
+    padding-right: 25%; }
+    .material-section .heading-content h2, .material-section .heading-content .h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-family: 'Montserrat Black', sans-serif;
+    }
+
+    .sub-title-materials{
+      text-transform: uppercase;
+    }
+
+  .materials-icon{
+      display: flex;
+      justify-content:right;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+
+  .hero .img-bg img {
+    max-width: 100%;
+    height: auto;
+}
+
+  
