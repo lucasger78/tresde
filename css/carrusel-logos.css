@@ -65,5 +65,17 @@
     filter: grayscale(0%);
 }
 
+@media (max-width: 768px){
+    .swiper-slide img {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .swiper-slide img:hover {
+        filter: grayscale(0%);
+    }
+}
+
 
 /* fin carrusel logos */
