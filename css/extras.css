@@ -6,6 +6,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.footer-list:hover{
+  color: #000;
+}
+
+.link-footer:hover{
+  color: #000;
+}
+
 .logo-menu{
     width: 80%;
 }
@@ -45,22 +53,6 @@
 
 
 /* GALERÍA SERVICIOS */
-
-/* .p-icon-service {
-  text-align: center;
-  
-}
-
-.h3-icon-service {
-  text-align: center;
-}
-
-.icon-service{
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-} */
 
 .service-iconos{
   display: flex;
@@ -196,18 +188,10 @@
     opacity: .8;
     bottom: 22.5%;
   } 
-  /* h1, h2 {
-    font-family: 'Montserrat Back', sans-serif !important;
-  }
-  h3, h4, h5 {
-    font-family: 'Montserrat ExtraBold', sans-serif !important;
-  } 
-
-  h6 {
-    font-family: 'Montserrat Bold', sans-serif !important;
-  } */
   
-  p {
+  
+  p,
+  a {
     font-family: 'Montserrat', sans-serif !important;
   }
 }
@@ -315,4 +299,47 @@
   .video-container {
       display: none;
   }
+}
+
+/* BOTÓN BACK TO TOP */
+
+/* .btn-back{
+  justify-content: right;
+  align-content: center;
+  
+} */
+
+
+/* Estilos del botón Back to Top */
+/* .back-to-top {
+  display: none !important;  
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); 
+  color: #fff;
+  text-decoration: none;
+  font-size: small;
+  text-transform: uppercase;
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.back-to-top.show {
+  display: block !important; 
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.4) !important; 
+} */
+
+/* FORMULARIO */
+.form-control{
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  border-color: rgb(146, 145, 145);
 }
