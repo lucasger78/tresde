@@ -185,7 +185,7 @@
     margin: 10px;
     font-size:medium;
     text-transform: uppercase;
-    font-family: 'Montserrat ExtraBold', sans-serif;
+    font-family: 'Montserrat ExtraBold', sans-serif !important;
     color:#838383;
   }
   
@@ -204,6 +204,20 @@
     opacity: .8;
     bottom: 22.5%;
   } 
+
+  h1, 
+  h2{
+    font-family: 'Montserrat Black', sans-serif !important;
+  }
+  h3,
+  h4{
+    font-family: 'Montserrat ExtraBold', sans-serif !important;
+  }
+
+  h5,
+  h6{
+    font-family: 'Montserrat Bold', sans-serif !important;
+  }
   
   
   p,
