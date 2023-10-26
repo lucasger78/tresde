@@ -428,4 +428,44 @@
   margin-top: 50px !important;
 }
 
+/* Estilos para la versión móvil */
+@media (max-width: 1000px) {
+  .materials-icon .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .materials-icon .elem-material {
+      width: calc(33.333% - 5px); /* Establece el ancho de cada elem-material en 3 por fila con espacio entre ellos */
+      /* margin-bottom: 20px;  */
+
+
+  .materials-icon .service-iconos {
+      flex-direction: row; /* Muestra los elementos en una fila en dispositivos móviles */
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas */
+      justify-content: center; /* Centra los elementos en dispositivos móviles */
+  }
+
+  .materials-icon .img-material {
+      width: 100%; /* La imagen ocupa el 100% del ancho */
+      /* margin-top: 15px; 
+      margin-bottom: 0px; */
+      
+  }
+  /* Centra el elemento img-material */
+  .materials-icon .img-material {
+    display: flex;
+    justify-content: center !important;
+    align-content: center;
+    padding-left: 50%;
+    margin-top: 0%;
+  }
+  
+}
+
+
+
+
+
   
