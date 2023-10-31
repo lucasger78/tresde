@@ -9901,9 +9901,12 @@ textarea {
       .section .heading {
         font-size: 30px; } }
 
+
 .destination {
-  position: relative; }
+  position: relative;
+   }
   .destination .thumb {
+    
     position: relative;
     border-radius: 10px;
     overflow: hidden; }

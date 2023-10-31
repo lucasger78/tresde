@@ -1,0 +1,114 @@
+.materiales-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.title-materials {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    font-size:medium;
+    text-transform: uppercase;
+
+}
+
+.párrafo-materials {
+    text-align: center;
+    margin: 5px;
+    padding-top: 0 8px;
+    font-size: small;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+    /* align-items: start; */
+    margin: 10px;
+}
+
+.content-gallery {
+    width: 100%;    
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;    
+    align-items: center;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.content-gallery:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+.img-gallery{
+    width: 90%;
+    max-height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .gallery {
+        width: calc(50% - 20px);
+    }
+    .materiales-gallery {
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        width: calc(100% - 20px);
+    }
+    .materiales-gallery {
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+} */
+
+/* Estilos para pantallas más pequeñas (menos de 768px) */
+@media screen and (max-width: 1000px) {
+    .content-gallery {
+        width: 45%; /* Ajusta el ancho para mostrar dos imágenes por fila */
+    }
+    .materiales-gallery {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    .img-gallery{
+        object-fit: cover;
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas (menos de 480px) */
+@media screen and (max-width: 480px) {
+    .content-gallery {
+        width: 90%; /* Muestra una imagen por fila */
+    }
+    .materiales-gallery {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    .img-gallery{
+        object-fit: cover;
+    }
+}
