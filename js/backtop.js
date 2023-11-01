@@ -1,11 +1,21 @@
-// Muestra u oculta el botón Back to Top según la posición del scroll
+// Obtén una referencia al botón "Back to Top"
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Agrega un evento scroll a la ventana
 window.addEventListener("scroll", function() {
-    const button = document.querySelector(".back-to-top");
-    button.classList.toggle("show", window.scrollY > 0);
-  });
-  
-  // Scroll suave hacia el encabezado de la página cuando se hace click en el botón
-  document.querySelector(".back-to-top").addEventListener("click", function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+    // Si el scroll vertical es mayor a 300px, muestra el botón, de lo contrario, ocúltalo
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+});
+
+// Agrega un evento click al botón "Back to Top"
+backToTopBtn.addEventListener("click", function() {
+    // Desplaza la página hacia arriba suavemente
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

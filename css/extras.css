@@ -22,6 +22,12 @@
     color: #ffffff; 
 }
 
+.portfolio-bg{
+  background: whitesmoke;
+  width: 100%;
+  
+}
+
 .gallery-portfolio{
     display: flex;
     width: 600px;
@@ -340,39 +346,22 @@
 
 /* BOTÓN BACK TO TOP */
 
-/* .btn-back{
-  justify-content: right;
-  align-content: center;
-  
-} */
-
-
-/* Estilos del botón Back to Top */
-/* .back-to-top {
-  display: none !important;  
+/* Estilos para el botón "Back to Top" */
+#backToTopBtn {
+  display: none;
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
+  bottom: 20px;
+  right: 20px;
   width: 50px;
   height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3); 
-  color: #fff;
-  text-decoration: none;
-  font-size: small;
-  text-transform: uppercase;
+  background-color: rgba(169, 169, 169, 0.5);
+  color: white;
+  border: none;
   border-radius: 8px;
-  z-index: 9999;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
 }
-
-.back-to-top.show {
-  display: block !important; 
-}
-
-.back-to-top:hover {
-  background-color: rgba(0, 0, 0, 0.4) !important; 
-} */
 
 /* FORMULARIO */
 .form-control{
@@ -463,4 +452,56 @@
   }
   
 }
+}
+
+
+.h3-service-mat {
+  margin: 10px;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-family: 'Montserrat ExtraBold', sans-serif;
+  color:#252525;
+}
+
+.mat-img-card {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 1px 1px 5px #000;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+ 
+}
+
+.mat-img-card:hover .text-intro {
+  height: auto;
+  background: #000;
+  opacity: .8;
+  bottom: 22.5%;
+}
+
+.mat-img-card:hover .text-intro {
+  bottom: 0;
+}
+
+.mat-img-card:hover {
+  cursor: pointer;
+}
+
+.mat-img-card:hover .p-service {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+} 
+
+.mat-img-card:hover .text-intro {
+  height: auto;
+  background: #000;
+  opacity: .8;
+  bottom: 22.5%;
+} 
+
+.mat-img-card:hover .img-card {
+  transform: scale(1.1) rotate(-3deg);
 }
