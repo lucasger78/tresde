@@ -456,11 +456,11 @@
 
 
 .h3-service-mat {
-  margin: 10px;
+  margin: 15px;
   font-size: x-large;
   text-transform: uppercase;
   font-family: 'Montserrat ExtraBold', sans-serif;
-  color:#252525;
+  color:#ffffff;
 }
 
 .mat-img-card {
@@ -489,19 +489,32 @@
   cursor: pointer;
 }
 
-.mat-img-card:hover .p-service {
+.mat-img-card:hover .p-service-mat {
   opacity: 1;
   visibility: visible;
   transition: 0.3s;
 } 
 
-.mat-img-card:hover .text-intro {
+/* .mat-img-card:hover .text-intro {
   height: auto;
   background: #000;
   opacity: .8;
   bottom: 22.5%;
-} 
+}  */
 
 .mat-img-card:hover .img-card {
   transform: scale(1.1) rotate(-3deg);
 }
+
+.p-service-mat
+ {
+  font-size: small;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
+
