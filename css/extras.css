@@ -110,7 +110,7 @@
   max-width: 100%;
   box-shadow: 1px 1px 5px #000;
   overflow: hidden;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   transition: 0.3s;
   position: relative;
  
@@ -159,9 +159,9 @@
   bottom: 22.5%;
 }
 
-.service-img-card:hover {
+/* .service-img-card:hover {
   cursor: pointer;
-}
+} */
 
 .service-img-card:hover .p-service {
   opacity: 1;
@@ -468,7 +468,7 @@
   max-width: 100%;
   box-shadow: 1px 1px 5px #000;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: 0.3s;
   position: relative;
  
@@ -485,9 +485,9 @@
   bottom: 0;
 }
 
-.mat-img-card:hover {
+/* .mat-img-card:hover {
   cursor: pointer;
-}
+} */
 
 .mat-img-card:hover .p-service-mat {
   opacity: 1;
