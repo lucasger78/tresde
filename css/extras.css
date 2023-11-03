@@ -1,5 +1,6 @@
 .sub-title{
   font-family: 'Montserrat ExtraBold', sans-serif;
+  font-size: x-large !important;
 }
 
 .footer-text{
@@ -99,14 +100,14 @@
 }
 
 .container-service {
-  width: 100%;
+  width: 96%;
   max-width: 300px;
   margin: 10px 0; 
   text-align: center; 
 }
 
 .service-img-card {
-  width: 100%;
+  width: 96%;
   max-width: 100%;
   box-shadow: 1px 1px 5px #000;
   overflow: hidden;
@@ -130,7 +131,7 @@
   position: absolute;
   bottom: 0;
   background: rgba(27, 27, 27, .4);
-  color: #dfdfdf;
+  color: #ffffff;
   text-align: center;
   transition: .3s;
   overflow: hidden;
@@ -141,7 +142,7 @@
   font-size: x-large;
   text-transform: uppercase;
   font-family: 'Montserrat ExtraBold', sans-serif;
-  color:#838383;
+  color:#ffffff;
 }
 
 .p-service {
@@ -156,7 +157,7 @@
   height: auto;
   background: #000;
   opacity: .8;
-  bottom: 22.5%;
+  /* bottom: 22.5%; */
 }
 
 /* .service-img-card:hover {
@@ -166,7 +167,7 @@
 .service-img-card:hover .p-service {
   opacity: 1;
   visibility: visible;
-  transition: 0.3s;
+  transition: 0.8s;
 } 
 
 /* GALERÍA SERVICIOS RESPONSIVE */
@@ -241,11 +242,12 @@
 /* WHATSAPP */
 
 .whatsapp {
+  display: none;
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
-	left:40px;
+	bottom:70px;
+	right:20px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
@@ -282,10 +284,10 @@
     width: 100px;
   }
   
-  .fixed-action-btn .slider {
+  /* .fixed-action-btn .slider {
     position: absolute;
     bottom: 0;
-    left: 90px;
+    right: 90px;
     background-color: #25d366;
     color: #fff;
     padding: 8px;
@@ -294,17 +296,17 @@
     transition: all 0.3s ease;
     opacity: 0;
     white-space: nowrap;
-    /* text-transform: uppercase; */
+    
   }
   
   .fixed-action-btn:hover .slider {
     opacity: 1;
-    left: 90px;
+    right: 90px;
   }
   
   .tab {
     white-space: nowrap;
-  }
+  } */
   
   .btn-floating {
     width: 56px;
@@ -315,15 +317,16 @@
     align-items: center;
   }
   
-  .btn-floating i {
+  /* .btn-floating i {
     color: #fff;
-  }
+  } */
   
   .btn-lg {
     width: 64px;
     height: 64px;
     font-size: 24px;
   }
+ 
 
 /* END WHATSAPP */ 
 
@@ -331,11 +334,11 @@
 
 /* NO REPRODUCE VIDEO EN VERSION MOBILE */ 
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .video-container {
       display: none;
   }
-}
+} */
 
 /* TEXTO HEADER EN VERSION MOBILE */
 @media (max-width: 767px) {
@@ -361,6 +364,7 @@
   font-size: 20px;
   text-align: center;
   cursor: pointer;
+  z-index:100;
 }
 
 /* FORMULARIO */

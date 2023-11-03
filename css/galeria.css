@@ -15,8 +15,8 @@
 }
 
 .párrafo-materials {
-    text-align: center;
-    margin: 5px;
+    text-align:initial;
+    margin: 10px;
     padding-top: 0 8px;
     font-size: small;
 }
@@ -31,13 +31,14 @@
 }
 
 .content-gallery {
-    width: 100%;    
+    width: 100%; 
+    margin-right: 5px;   
     box-sizing: border-box;
     float: left;
     text-align: center;
     /* border-radius: 20px; */
     justify-content: center;    
-    align-items: center;
+    align-items:start;
     /* cursor: pointer; */
     padding-top: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -53,15 +54,24 @@
 }
 
 .img-gallery{
-    width: 90%;
+    width: 70%;
     max-height: 350px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     display: block;
     /* border-radius: 20px; */
 
 }
 
+.img-gallery {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+}
+
+/* Cambia la imagen a color cuando se hace hover */
+.img-gallery:hover {
+    filter: grayscale(0%);
+}
 
 /* @media screen and (max-width: 768px) {
     .gallery {
@@ -97,6 +107,17 @@
     .img-gallery{
         object-fit: cover;
     }
+
+    .img-gallery {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .img-gallery:hover {
+        filter: grayscale(0%);
+    }
+    
 }
 
 /* Estilos para pantallas aún más pequeñas (menos de 480px) */
@@ -111,4 +132,15 @@
     .img-gallery{
         object-fit: cover;
     }
+
+    .img-gallery {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out; /* Transición suave para el filtro */
+    }
+    
+    /* Cambia la imagen a color cuando se hace hover */
+    .img-gallery:hover {
+        filter: grayscale(0%);
+    }
+    
 }
