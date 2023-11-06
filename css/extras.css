@@ -282,31 +282,7 @@
   
   .fixed-action-btn .whatsapp-btn:hover {
     width: 100px;
-  }
-  
-  /* .fixed-action-btn .slider {
-    position: absolute;
-    bottom: 0;
-    right: 90px;
-    background-color: #25d366;
-    color: #fff;
-    padding: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: all 0.3s ease;
-    opacity: 0;
-    white-space: nowrap;
-    
-  }
-  
-  .fixed-action-btn:hover .slider {
-    opacity: 1;
-    right: 90px;
-  }
-  
-  .tab {
-    white-space: nowrap;
-  } */
+  }  
   
   .btn-floating {
     width: 56px;
@@ -330,15 +306,55 @@
 
 /* END WHATSAPP */ 
 
+/* PORTFOLIO */
+/* CARRUSEL */
+body {
+  background-color: lightgrey;
+}
+
+.slider-container {
+  width: 550px;
+  height: 430px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 900%; 
+  transition: transform 0.5s ease-in-out;
+  object-fit: cover;
+}
+
+.slide {
+  flex: 0 0 620px;
+}
+
+.prev, .next {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* END PORTFOLIO */
 
 
-/* NO REPRODUCE VIDEO EN VERSION MOBILE */ 
 
-/* @media screen and (max-width: 900px) {
-  .video-container {
-      display: none;
-  }
-} */
+
 
 /* TEXTO HEADER EN VERSION MOBILE */
 @media (max-width: 767px) {
@@ -372,6 +388,7 @@
   border-radius: 10px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   border-color: rgb(146, 145, 145);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* SECTION MATERIAL */
@@ -519,6 +536,7 @@
   opacity: 0;
   transition: 0.3s;
 }
+
 
 
 
