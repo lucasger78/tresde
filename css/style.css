@@ -10138,6 +10138,7 @@ textarea {
     border: none;
     padding-left: 40px;
     border-radius: 0;
+    
     position: relative;
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
