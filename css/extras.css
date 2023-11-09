@@ -1,6 +1,15 @@
 .sub-title{
-  font-family: 'Montserrat ExtraBold', sans-serif;
+  font-family: 'Montserrat Black', sans-serif !important;
   font-size: x-large !important;
+  align-items: start !important;
+}
+
+.faq-sub-title{
+  color: #3d3d3d !important;
+}
+
+.faq-section{
+  background-color: whitesmoke;
 }
 
 .footer-text{
@@ -13,6 +22,10 @@
 
 .link-footer:hover{
   color: #000;
+}
+
+.p-info-imp {
+  font-family: 'Montserrat ExtraBold', sans-serif !important;
 }
 
 .logo-menu{
@@ -146,7 +159,7 @@
 }
 
 .p-service {
-  font-size: large;
+  font-size:medium;
   margin: 20px;
   font-family: 'Montserrat', sans-serif;
   visibility: hidden;
@@ -313,8 +326,8 @@ body {
 }
 
 .slider-container {
-  width: 550px;
-  height: 430px;
+  width: 850px;
+  height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -323,11 +336,12 @@ body {
   display: flex;
   width: 900%; 
   transition: transform 0.5s ease-in-out;
-  object-fit: cover;
 }
 
 .slide {
-  flex: 0 0 620px;
+  flex: 0 0 700px;
+  margin: 0;
+  padding: 0;
 }
 
 .prev, .next {
@@ -349,6 +363,7 @@ body {
 .next {
   right: 10px;
 }
+
 
 @media (max-width: 900px) {
   .slider-container {
@@ -382,10 +397,19 @@ body {
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   cursor: pointer;
   z-index:100;
+}
+
+
+#backToTopBtn.show {
+  display: block; 
+}
+
+#backToTopBtn:hover {
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia el color de fondo al pasar el cursor sobre él */
 }
 
 /* FORMULARIO */

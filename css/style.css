@@ -4180,7 +4180,7 @@ textarea.form-control-lg {
       -o-transition: none;
       transition: none; } }
   .accordion-button:not(.collapsed) {
-    color: #d96d3e;
+    color: #3d3d3d !important;
     background-color: #fef2ec;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); }
@@ -10153,7 +10153,8 @@ textarea {
     .custom-accordion .accordion-item .btn-link[aria-expanded="true"] {
       font-weight: 700;
       color: #fff !important;
-      background: #f17945; }
+      background: #495057;
+      font-family: 'Montserrat Bold', sans-serif !important; }
       .custom-accordion .accordion-item .btn-link[aria-expanded="true"]:before {
         font-family: 'icomoon';
         content: "\f068";
@@ -10276,7 +10277,7 @@ textarea {
   display: block; }
   .service-1 .icon, .service-2 .icon {
     display: inline-block;
-    justify-content: right;
+    justify-content: right;    
     position: relative;
     left: 10px;
     margin-bottom: 30px;

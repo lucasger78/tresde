@@ -45,3 +45,17 @@ window.addEventListener('scroll', checkScroll);
 
 // Llama a la función inicialmente para comprobar el estado al cargar la página
 checkScroll();
+
+
+//Btn Back to Top
+// Muestra u oculta el botón Back to Top según la posición del scroll
+window.addEventListener("scroll", function() {
+  const button = document.querySelector("#backToTopBtn");
+  button.classList.toggle("show", window.scrollY > 0);
+});
+
+// Scroll suave hacia el encabezado de la página cuando se hace click en el botón
+document.querySelector("#backToTopBtn").addEventListener("click", function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
