@@ -4,12 +4,26 @@
   align-items: start !important;
 }
 
+.section-service-text {
+  padding: 10rem 0 !important; 
+  background-color: whitesmoke !important;
+}
+  @media (max-width: 991.98px) {
+    .section-service-text {
+      padding: 3rem 0 !important; 
+    } 
+}
+
 .faq-sub-title{
   color: #3d3d3d !important;
 }
 
 .faq-section{
-  background-color: #ffff;
+  background-color: #ffff !important;
+}
+
+.conteiner-material{
+  background-color: whitesmoke !important;
 }
 
 .footer-text{
@@ -95,7 +109,7 @@
   position: relative;
   flex-wrap: wrap;
   justify-content: right;
-  align-items: center;   
+  align-items:center !important;   
   padding-right: 15px;
 }
 
@@ -430,7 +444,7 @@ body {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 23px;
   width: 50px;
   height: 50px;
   background-color: rgba(169, 169, 169, 0.5);
@@ -607,5 +621,7 @@ body {
 }
 
 
-
+.contact-section{
+  background-color: whitesmoke !important;
+}
 
