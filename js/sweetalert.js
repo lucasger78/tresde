@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         })
                         .then(() => {
                             // Después de hacer clic en OK, redirige al index
-                            window.location.href = 'https://lucasger78.github.io/tresde/#contact';
+                            window.location.reload;
                         });
                     }, 500);
                 } else {
