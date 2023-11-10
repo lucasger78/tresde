@@ -67,20 +67,19 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then(response => {
                 if (response.ok) {
-                    // Si el formulario se envía con éxito, espera medio segundo y luego muestra el SweetAlert
-                    setTimeout(function () {
-                        Swal.fire({
-                            title: '¡Enviado!',
-                            text: 'Gracias por tu mensaje.',
-                            imageUrl: "logo.png",
-                            icon: 'success',
-                            confirmButtonText: 'OK'
-                        })
-                        .then(() => {
-                            // Después de hacer clic en OK, redirige al index
-                            window.location.reload;
-                        });
-                    }, 500);
+                    // Si el formulario se envía con éxito, reinicia el formulario y luego muestra el SweetAlert
+                    formulario.reset();
+                    Swal.fire({
+                        title: '¡Enviado!',
+                        text: 'Gracias por tu mensaje.',
+                        imageUrl: "logo.png",
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    })
+                    .then(() => {
+                        // Después de hacer clic en OK, recarga la página
+                        window.location.reload();
+                    });
                 } else {
                     // Si hay un error en el envío, muestra un mensaje de error
                     Swal.fire({
