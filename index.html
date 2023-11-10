@@ -72,7 +72,7 @@
 					</div>
 					<div class="col-lg-6 d-none d-lg-inline-block text-center nav-center-wrap">
 						<ul class="js-clone-nav  text-center site-menu p-0 m-0">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="index.html">Inicio</a></li>
 							<li><a href="#about">Nosotros</a></li>
 							<li><a href="#services">Servicios</a></li>
 							<li><a href="#materials">Materiales</a></li>
@@ -112,10 +112,10 @@
 					<h1 class="heading title-hero" data-aos="fade-up">Soluciones en impresión 3D para tu proyecto.</h1>
 					<p class="mb-5 p-hero" data-aos="fade-up">Desarrollamos soluciones a medida para proyectos y empresas, incorporando los beneficios de una tecnología versátil y accesible a través de nuestros servicios de asesoramiento, diseño e impresión 3D.</p>
 
-					<!-- ========== MODAL VIDEO ========== -->
+					<!-- ========== BTN CONTACTO ========== -->
 					
 					<p class="my-2" data-aos="fade-up" data-aos-delay="300"><a href="#contact" class="btn btn-secondary">Contanos tu Proyecto</a></p>
-					<!-- ========== END MODAL VIDEO ========== -->
+					<!-- ========== END BTN CONTACTO ========== -->
 
 				</div>				
 			</div>
@@ -134,7 +134,7 @@
 				<div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
 					<div class="image-stack mb-5 mb-lg-0">
 						<div class="image-stack__item image-stack__item--bottom" data-aos="fade-up"  >
-							<img src="images/img_v_1.jpg" alt="Image" class="img-fluid rellax ">
+							<img src="images/img_v_1.jpg" alt="Image" class="img-fluid rellax img-about">
 						</div>
 						<div class="image-stack__item image-stack__item--top" data-aos="fade-up" data-aos-delay="100"  data-rellax-percentage="0.5">
 							<img src="images/img_v_2.jpg" alt="Image" class="img-fluid">
@@ -424,7 +424,7 @@
 				<div class="slider-container">
 					<div class="slides">
 						<div class="slide">
-							<img src="images/img-5d.jpg" alt="Imagen 1">
+							<img src="images/img-1d.jpg" alt="Imagen 1">
 						</div>
 						<div class="slide">
 							<img src="images/img-2d2.jpg" alt="Imagen 2">
@@ -601,26 +601,26 @@
 				</div>
 				<!-- FORM -->
 				<div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-					<form action="#" border-form>
+					<form action="https://formsubmit.co/contacto@estudiotresde.com" method="POST" border-form>
 						<div class="row">
 							<div class="col-6 mb-3">
-								<input type="text" class="form-control" placeholder="Nombre">
+								<input type="text" class="form-control" placeholder="Nombre" required>
 							</div>
-							<!-- <div class="col-6 mb-3">
-								<input type="phone" class="form-control" placeholder="Teléfono">
-							</div> -->
+							
 							<div class="col-6 mb-3">
-								<input type="email" class="form-control" placeholder="E-mail">
+								<input type="email" class="form-control" placeholder="E-mail" required>
 							</div>
 							<div class="col-12 mb-3">
-								<input type="text" class="form-control" placeholder="Asunto">
+								<input type="text" class="form-control" placeholder="Asunto" required>
 							</div>
 							<div class="col-12 mb-3">
-								<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Contanos tu proyecto"></textarea>
+								<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Contanos tu proyecto" required></textarea>
 							</div>
 
 							<div class="col-12">
 								<input type="submit" value="Enviar" class="btn btn-secondary">
+								<input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="materiales-prueba.html">
 							</div>
 						</div>
 					</form>
@@ -720,7 +720,8 @@
 			</div>
 		</div>
 
-		
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="js/sweetalert.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/aos.js"></script>

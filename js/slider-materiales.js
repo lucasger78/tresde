@@ -41,7 +41,7 @@
 // });
 
 
-///////////// PRUEBA ////////////
+///////////// PORTFOLIO ////////////
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
 const slides = document.querySelector('.slides');
@@ -67,6 +67,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 function updateSlidePosition() {
-  const slideWidth = document.querySelector('.slide').offsetWidth;
+  const slideWidth = document.querySelector('.slide').offsetWidth + 10;
   slides.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
 }
