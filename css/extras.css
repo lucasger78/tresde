@@ -296,6 +296,14 @@
   }
 }
 
+.swal2-text {
+  font-family:'Montserrat', sans-serif;
+}
+
+.swal2-text2 {
+  font-family: 'Montserrat Bold', sans-serif !important;
+}
+
 .service-img-card:hover .img-card {
   transform: scale(1.1) rotate(-3deg);
 }

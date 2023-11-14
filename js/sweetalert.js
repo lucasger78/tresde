@@ -71,10 +71,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     formulario.reset();
                     Swal.fire({
                         title: '¡Enviado!',
-                        text: 'Gracias por tu mensaje.',
+                        text: 'Gracias por tu mensaje.',                                                
                         imageUrl: "logo2.png",
                         icon: 'success',
-                        confirmButtonText: 'OK'
+                        confirmButtonText: 'OK',
+                        confirmButtonColor: '#3a3a3a',
+                        customClass: {                            
+                            content: 'swal2-text',
+                            confirmButton: 'swal2-text2'  
+                        }
                     })
                     .then(() => {
                         // Después de hacer clic en OK, recarga la página
