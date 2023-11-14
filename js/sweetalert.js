@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     Swal.fire({
                         title: '¡Enviado!',
                         text: 'Gracias por tu mensaje.',
-                        imageUrl: "logo.png",
+                        imageUrl: "logo2.png",
                         icon: 'success',
                         confirmButtonText: 'OK'
                     })
