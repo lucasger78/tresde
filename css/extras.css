@@ -409,12 +409,16 @@ body {
 @media (max-width: 1000px){
   .overlay-mobile{
     width: 100% !important;
-    height: 400px !important;
+    height: 450px !important;
   }
-
 }
 
-
+/* @media (max-width: 1600px){
+  .overlay-mobile{
+    width: 100% !important;
+    height: 400px !important;
+  }
+} */
 
 
 .slider-container {
