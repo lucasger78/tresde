@@ -405,6 +405,15 @@ body {
 
 }
 
+}
+@media (max-width: 1000px){
+  .overlay-mobile{
+    width: 100% !important;
+    height: 500px !important;
+  }
+
+}
+
 
 
 
