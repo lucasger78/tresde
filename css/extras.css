@@ -390,21 +390,22 @@ body {
 }
 
 
+@media (max-width: 750px){
+  .overlay-mobile{
+    width: 100% !important;
+    height: 450px !important;
+  }
+
+}
 @media (max-width: 900px){
   .overlay-mobile{
     width: 100% !important;
-    height: 450px !important;
+    height: 500px !important;
   }
 
 }
 
-@media (max-width: 1400px){
-  .overlay-mobile{
-    width: 100% !important;
-    height: 450px !important;
-  }
 
-}
 
 
 .slider-container {
