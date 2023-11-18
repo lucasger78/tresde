@@ -383,6 +383,8 @@
 
 /* END WHATSAPP */ 
 
+
+
 /* PORTFOLIO */
 /* CARRUSEL */
 body {
@@ -390,35 +392,13 @@ body {
 }
 
 
-@media (max-width: 750px){
-  .overlay-mobile{
-    width: 100% !important;
-    height: 350px !important;
-  }
-
-}
 @media (max-width: 900px){
-  .overlay-mobile{
-    width: 100% !important;
-    height: 400px !important;
-  }
-
-}
-
-
-@media (max-width: 1000px){
   .overlay-mobile{
     width: 100% !important;
     height: 450px !important;
   }
-}
 
-/* @media (max-width: 1600px){
-  .overlay-mobile{
-    width: 100% !important;
-    height: 400px !important;
-  }
-} */
+}
 
 
 .slider-container {
@@ -437,12 +417,15 @@ body {
 }
 
 .slide {
-  flex: 0 0 850px;
+  flex: 0 0 700px;
   margin-right: 0px;
 }
 
 .slide img {
   width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+
 }
 
 .prev, .next {
@@ -471,6 +454,7 @@ body {
      justify-content: center!important; 
   }
 }
+
 
 
 /* END PORTFOLIO */
@@ -559,6 +543,15 @@ body {
   .hero .img-bg img {
     max-width: 100%;
     height: auto;
+    background-color: #d3d3d3 !important;
+}
+
+.bg-overlay{
+  background-color: #d3d3d3 !important;
+}
+
+.rellax-bg{
+  background-color: #d3d3d3 !important;
 }
 
 .p-flex{
