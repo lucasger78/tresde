@@ -9365,7 +9365,7 @@ textarea {
         padding: 10px 15px;
         display: inline-block;
         text-decoration: none !important;
-        color: rgba(255, 255, 255, 0.7); }
+        color: whitesmoke; }
         .site-nav .site-navigation .site-menu > li > a:hover {
           color: #636464; }
       .site-nav .site-navigation .site-menu > li.cta-button a {
