@@ -103,6 +103,34 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//CAPTCHA
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Verificar el estado de reCAPTCHA
+        const recaptchaCheckbox = document.querySelector('.g-recaptcha');
+        if (grecaptcha.getResponse() === '') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Por favor, marca la casilla "No soy un robot" antes de enviar el formulario.',
+                confirmButtonText: 'OK',
+            });
+            return; // Detener el envío si el reCAPTCHA no está marcado
+        }
+    });
+});
+
+
+
+
+
+
+
 
 
 
