@@ -670,3 +670,10 @@ body {
 .contact-section{
   background-color: whitesmoke !important;
 }
+
+@media (max-width: 1000px) {
+  .map {
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
