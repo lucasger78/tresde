@@ -43,7 +43,30 @@
       margin: 0 auto; /* Centrar horizontalmente */
       display: block; /* Mostrar como bloque para evitar desbordamientos */
   }
+
+  
 }
+
+@media (max-width: 1000px){
+  h1, 
+  h2{
+    font-family: 'Montserrat Black', sans-serif !important;
+  }
+  h3,
+  h4{
+    font-family: 'Montserrat ExtraBold', sans-serif !important;
+  }
+  h5,
+  h6{
+    font-family: 'Montserrat Bold', sans-serif !important;
+  }   
+  p,
+  a {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+
+}
+
 
 
   
