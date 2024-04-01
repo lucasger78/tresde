@@ -34,19 +34,16 @@
     right: 10px;
   }
 
-  .map-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Ajusta el ancho del contenedor al 100% del viewport */
-    padding-bottom: 100%; /* Hace que el contenedor sea cuadrado */
+ /* Estilo para el mapa de Google en dispositivos móviles */
+@media (max-width: 767px) {
+  iframe[src^="https://www.google.com/maps"] {
+      width: calc(100vw - 40px); /* Ancho igual al 100% del viewport menos 40px de margen */
+      max-width: calc(100% - 40px); /* Ancho máximo igual al 100% menos 40px de margen */
+      height: 300px; /* Altura fija para mantener la proporción */
+      margin: 0 auto; /* Centrar horizontalmente */
+      display: block; /* Mostrar como bloque para evitar desbordamientos */
+  }
 }
 
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
   
