@@ -35,7 +35,7 @@
   }
 
  /* Estilo para el mapa de Google en dispositivos móviles */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   iframe[src^="https://www.google.com/maps"] {
       width: calc(100vw - 40px); /* Ancho igual al 100% del viewport menos 40px de margen */
       max-width: calc(100% - 40px); /* Ancho máximo igual al 100% menos 40px de margen */
