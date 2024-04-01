@@ -33,4 +33,20 @@
   .next {
     right: 10px;
   }
+
+  .map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ajusta el ancho del contenedor al 100% del viewport */
+    padding-bottom: 100%; /* Hace que el contenedor sea cuadrado */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
   
